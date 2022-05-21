@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Pavlograd/website/issues"
   },
-  "homepage": "https://github.com/Pavlograd/website#readme"
+  "homepage": "https://github.com/Pavlograd/website#readme",
+  "dependencies": {
+    "server": "^1.0.37"
+  }
 }
