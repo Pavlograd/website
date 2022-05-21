@@ -1,6 +1,22 @@
-// Include the server in your file
-const server = require("server");
-const { get, post } = server.router;
+const express = require("express");
+const app = express();
+const http = require("http");
+const path = require("path");
+const port = 8000;
 
-// Handle requests to the url "/" ( http://localhost:3000/ )
-server([get("/", (ctx) => "Hello world!")]);
+// Use the whole root as static files to be able to serve the html file and
+// the build folder
+
+app.use(express.static(path.join(__dirname, "/games")));
+
+// Send html on '/'path
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/games/index.html"));
+});
+
+// Create the server and listen on port
+
+http.createServer(app).listen(port, () => {
+  console.log("lol");
+});
