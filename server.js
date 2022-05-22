@@ -7,7 +7,7 @@ const port = 8000;
 // Use the whole root as static files to be able to serve the html file and
 // the build folder
 
-app.use(express.static(path.join(__dirname, "/games")));
+app.use(express.static(path.join(__dirname, "/SeniorCats")));
 
 // Send html on '/'path
 
