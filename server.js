@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "/games")));
 // Send html on '/'path
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/games/index.html"));
+  res.sendFile(path.join(__dirname, "/index.html"));
 });
 
 // Create the server and listen on port
