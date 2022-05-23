@@ -8,6 +8,7 @@ const port = 8000;
 // the build folder
 
 app.use(express.static(path.join(__dirname, "/SeniorCats")));
+app.use(express.static(path.join(__dirname, "/Pathways")));
 
 // Send html on '/'path
 
@@ -18,5 +19,5 @@ app.get("/", (req, res) => {
 // Create the server and listen on port
 
 http.createServer(app).listen(port, () => {
-  console.log("lol");
+  console.log("success");
 });
