@@ -1,0 +1,30 @@
+body {
+  background-color: #ffecc9;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.game-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+}
+
+.github-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+a {
+  color: black;
+  font-size: 24px;
+}
